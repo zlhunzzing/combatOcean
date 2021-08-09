@@ -1,13 +1,20 @@
 /* reset CSS */
 body {
   margin: 0;
+  font-size: 0;
 }
 
-div {
-  box-sizing: border-box;
-  border: 10px solid black;
-  display: block;
-  width: 300px;
-  height: 200px;
-  background-color: red;
+.item {
+  display: inline-block;
+  padding: 5%;
+}
+
+.item-a {
+  width: 30%;
+  background-color: yellow;
+}
+
+.item-b {
+  width: 50%;
+  background-color: green;
 }
