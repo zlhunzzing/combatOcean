@@ -6,6 +6,7 @@ body {
 
 .item {
   display: inline-block;
+  vertical-align: top;
   padding: 5%;
   font-size: 1rem;
   /* rem은 최상위 요소의 크기 비례, em은 상위요소 비례 */
