@@ -6,6 +6,16 @@ body {
 .container {
   /* max-width: 1000px;
   margin: 0 auto; */
+  background-color: pink;
+  /* float는 없는 자식처럼 취급됨 */
+}
+
+.container::after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
 }
 
 .item {
@@ -23,7 +33,7 @@ body {
   background-color: green;
 }
 
-footer {
+/* footer {
   clear: both;
   background-color: gray;
-}
+} */
