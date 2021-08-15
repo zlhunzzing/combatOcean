@@ -4,36 +4,37 @@ body {
 }
 
 .container {
-  /* max-width: 1000px;
-  margin: 0 auto; */
   background-color: pink;
-  /* float는 없는 자식처럼 취급됨 */
-}
-
-.container::after {
-  content: '';
-  display: block;
-  clear: both;
-  height: 0;
-  visibility: hidden;
 }
 
 .item {
-  float: left;
   padding: 5%;
 }
 
 .item-a {
-  width: 30%;
   background-color: yellow;
 }
 
 .item-b {
-  width: 50%;
   background-color: green;
 }
 
-/* footer {
-  clear: both;
-  background-color: gray;
-} */
+@media screen and (min-width: 700px) {
+  .container {
+    font-size: 0;
+  }
+
+  .item {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+  }
+
+  .item-a {
+    width: 30%;
+  }
+
+  .item-b {
+    width: 50%;
+  }
+}
